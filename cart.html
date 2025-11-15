@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Accessories Cart</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+    .cart-container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; }
+    .cart-title { text-align: center; font-size: 2em; margin-bottom: 12px; }
+    .cart-item { display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #ececec; }
+    .cart-img { width: 60px; height: 60px; object-fit: cover; margin-right: 16px; border-radius: 5px; }
+    .cart-desc { flex: 1; }
+    .cart-qty { width: 40px; text-align: center; }
+    .cart-price { color: #009688; font-weight: bold; margin-left: 16px; }
+    .cart-actions { text-align: right; margin-top: 16px; }
+    .cart-total { font-size: 1.2em; font-weight: bold; }
+    .checkout-btn { background: #009688; color: #fff; padding: 8px 24px; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <div class="cart-title">Mobile Accessories Cart</div>
+    <div class="cart-item">
+      <img class="cart-img" src="d:\BCA SEM-1A\Mobile Accessories\Images\airphones photos\Airdops-Pro.webp" alt="Earbuds">
+      <div class="cart-desc">
+        <div>Wireless Earbuds</div>
+        <div>Bluetooth v5.0, Water Resistant</div>
+      </div>
+      <input class="cart-qty" type="number" min="1" value="1">
+      <div class="cart-price">₹1599</div>
+    </div>
+    <div class="cart-item">
+      <img class="cart-img" src="d:\BCA SEM-1A\Mobile Accessories\Images\charger main.css.webp" alt="Fast Charger">
+      <div class="cart-desc">
+        <div>Fast Charger with Type-C cable</div>
+        <div>66W, Quick Charge</div>
+      </div>
+      <input class="cart-qty" type="number" min="1" value="2">
+      <div class="cart-price">₹499</div>
+    </div>
+    <div class="cart-item">
+      <img class="cart-img" src="d:\BCA SEM-1A\Mobile Accessories\Images\case photo\samsung s24 ultra.webp" alt="USB Cable">
+      <div class="cart-desc">
+        <div>Samsung</div>
+        <div>case </div>
+      </div>
+      <input class="cart-qty" type="number" min="1" value="1">
+      <div class="cart-price">₹659</div>
+    </div>
+      <div class="cart-item">
+      <img class="cart-img" src="d:\BCA SEM-1A\Mobile Accessories\Images\Speakers photo\JBL Speakers.jpg" alt="USB Cable">
+      <div class="cart-desc">
+        <div>JBL mini</div>
+        <div>speakers</div>
+      </div>
+      <input class="cart-qty" type="number" min="1" value="1">
+      <div class="cart-price">₹4999</div>
+    </div>
+    <div class="cart-actions">
+         <span class="cart-total">Total: ₹7756</span>
+     <input type="button" name="checkout-btn" value="checkout">
+    </div>
+  </div>
+</body>
+</html>

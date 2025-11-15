@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TravelGo - Payment Method</title>
+  <style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fff5f5;
+            color: #553c3c;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+       /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #262cc6 0%, #da59cae7 100%);
+            color: white;
+            padding: 25px 0;
+            box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: #281cd0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 17px;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff7f;
+        }
+
+        .search-cart {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box {
+            display: flex;
+            background: rgb(123, 91, 158);
+            border-radius: 30px;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .search-box input {
+            border: none;
+            padding: 10px 15px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-box button {
+            background: #281cd0;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .cart-icon {
+            color: rgb(249, 249, 249);
+            font-size: 22px;
+            position: relative;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #502bf6;
+            color: white;
+            border-radius: 50%;
+            width
+            
+            px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+    main {
+      flex: 1;
+      max-width: 500px;
+      margin: 50px auto;
+      background: rgb(243, 243, 243);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(204, 19, 228, 0.84);
+    }
+    main h2 {
+      color: #004aad;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #222;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="number"],
+    form select {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1.8px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="tel"]:focus,
+    form input[type="number"]:focus,
+    form select:focus {
+      border-color: #004aad;
+      outline: none;
+    }
+    .payment-methods {
+      margin-bottom: 20px;
+    }
+    .payment-methods label {
+      font-weight: 600;
+      margin-right: 15px;
+      
+    }
+    .payment-methods input[type="radio"] {
+      margin-right: 8px;
+      
+    }
+    button {
+      width: 100%;
+      background-color: #004aad;
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #003380;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background-color: #222;
+      color: #aaa;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      margin-top: auto;
+    }
+    @media (max-width: 520px) {
+      main {
+        margin: 20px;
+        padding: 25px 20px;
+      }
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="GadgetGuard"></i>
+                    GadgetGuard
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="d:\BCA SEM-1A\Mobile Accessories\CSS\mobile acc.html">Home</a></li>
+                        <li><a href="d:\BCA SEM-1A\Mobile Accessories\CSS\chargers.html">Chargers</a></li>
+                        <li><a href="d:\BCA SEM-1A\Mobile Accessories\CSS\powerbank.html">Powerbank</a></li>
+                        <li><a href="d:\BCA SEM-1A\Mobile Accessories\CSS\smartwatch.html">Smart wach</a></li>
+                        <li><a href="d:\BCA SEM-1A\Mobile Accessories\CSS\cases.html">Case</a></li>
+                        <li><a href="d:\BCA SEM-1A\Mobile Accessories\CSS\about us.html">About Us</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<main>
+  <h2>Payment Method</h2>
+  
+  <form id="paymentForm">
+    <div class="payment-methods">
+      <label>
+        <input type="radio" name="payment" value="credit-card" checked />
+       G-PAY
+      
+      </label> 
+      <input type="radio" name="payment" value="Case On Delivery" checked />
+        Cash Of Delivery
+      <label>
+
+      </label>
+      
+    </div>
+
+    <div id="credit-card-fields">
+      <label for="cardName">Name</label>
+      <input type="text" id="cardName" name="cardName" placeholder="username" required />
+
+      <label for="cardName">Address</label>
+      <input type="text" id="cardName" name="cardName" placeholder="Address" maxlength="19" required />
+
+      
+
+      <label for="cvv">Mobile No.</label>
+      <input type="number" id="cvv" name="cvv" placeholder="Enter No." min="100" max="999" required />
+
+      <input type="checkbox" name="remember me">  Remember me 
+    </div>
+    
+    <br>
+    <div id="G-PAY" style="display:none;">
+      <p>You will be redirected to G-PAY to complete your payment securely.</p>
+    </div>
+
+    <div id="bank-transfer-info" style="display:none;">
+      <p>Transfer the amount to the following bank account:<br />
+         <strong>Account Name:</strong> GadgetGuard Acc.<br />
+         <strong>Account Number:</strong> 1234567890<br />
+         <strong>Bank:</strong> All Bank<br />
+         <strong>SWIFT:</strong> GLBLUS33
+      </p>
+    </div>
+
+    <button type="submit">Confirm</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2025 GadgetGuard. All rights reserved.
+</footer>
+
+<script>
+
+  // Initialize on load
+  togglePaymentFields();
+
+  document.getElementById('paymentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const selected = document.querySelector('input[name="payment"]:checked').value;
+    
+    if(selected === 'credit-card') {
+      // Simple validation example (more can be added)
+      const cardName = this.cardName.value.trim();
+      const cardNumber = this.cardNumber.value.trim();
+      const expiryDate = this.expiryDate.value.trim();
+      const cvv = this.cvv.value.trim();
+
+      if(!cardName || !cardNumber || !expiryDate || !cvv) {
+        alert('Please fill all credit card details correctly.');
+        return;
+      }
+    }
+
+    alert('Thank you! Your payment method (' + selected.replace('-', ' ') + ') has been received. We will process your booking shortly.');
+    this.reset();
+    togglePaymentFields();
+  });
+</script>
+
+</body>
+</html>
